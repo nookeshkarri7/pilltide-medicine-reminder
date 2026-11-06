@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pilltide: Medicine Reminder for Android | Pill Tracker</title>
+<meta name="description" content="Pilltide is a free medicine reminder for Android. Exact-minute reminders, Taken from the notification, streaks and a doctor report. Offline, no account.">
+<meta property="og:title" content="Pilltide: Medicine Reminder for Android">
+<meta property="og:description" content="Reminders that ring on time, Taken from the notification, and progress you can share with your doctor.">
+<meta property="og:image" content="https://nookeshkarri7.github.io/pilltide-medicine-reminder/assets/feature-graphic-1024x500.png">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/icon-512.png" type="image/png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="bar">
+    <a class="brand" href="https://pilltide.pages.dev/"><img src="assets/icon-512.png" alt="" width="36" height="36">Pilltide</a>
+    <nav aria-label="Links">
+      <a href="https://pilltide.pages.dev/">Website</a>
+      <a href="https://pilltide.pages.dev/privacy/">Privacy</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="title">
+      <div>
+        <h1 id="title">Pilltide, the medicine reminder that doesn't get in the way</h1>
+        <p class="lede">A free Android app for anyone who takes daily medicines or looks after someone who does. Reminders ring on the minute, and you answer them from the notification.</p>
+        <a class="play" href="https://play.google.com/store/apps/details?id=com.pilltideapp.pilltide&amp;utm_source=github&amp;utm_medium=pages">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 2.6v18.8c0 .5.5.8.9.6l16.3-9.4c.4-.2.4-.9 0-1.1L4.9 2c-.4-.2-.9.1-.9.6Z"/></svg>
+          Get it on Google Play
+        </a>
+        <p class="sub">Free. Offline. No account.</p>
+      </div>
+      <button class="player" style="max-width:300px;justify-self:center" id="player" type="button" aria-label="Play the Pilltide teaser (loads YouTube)">
+        <img src="assets/2-today.png" alt="" width="540" height="960">
+        <span><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M6 3.5v17l14-8.5z"/></svg></span>
+      </button>
+    </section>
+
+    <section aria-labelledby="what">
+      <h2 id="what">What you get</h2>
+      <ul class="pains">
+        <li><strong>On-time reminders.</strong> Exact alarms, set again after a restart. A check warns you if your phone would block them.</li>
+        <li><strong>Answer from the notification.</strong> Taken, Snooze 10 min or Skip. It asks again every 10 minutes until you answer.</li>
+        <li><strong>Any schedule.</strong> Daily times, weekdays, every few days or hours, 21/7 cycles, or as needed.</li>
+        <li><strong>Honest log.</strong> The real time and amount of every dose. Late, missed and skipped stay separate.</li>
+        <li><strong>Progress and a doctor report.</strong> Streaks, 7- and 30-day rates, a 4-week calendar and a PDF.</li>
+        <li><strong>Private.</strong> Your list stays on your phone. No account, no cloud, no analytics.</li>
+      </ul>
+    </section>
+
+    <section aria-label="Screenshots">
+      <div class="row">
+        <figure class="shot"><img src="assets/1-reminder.png" alt="A reminder notification with Taken, Snooze 10 min and Skip" width="1080" height="1920" loading="lazy"></figure>
+        <figure class="shot" style="max-width:300px"><img src="assets/3-progress.png" alt="Progress screen with the 30-day ring, streak and calendar" width="1080" height="1920" loading="lazy"></figure>
+      </div>
+      <div class="row">
+        <figure class="shot"><img src="assets/4-when-taken.png" alt="Logging when a dose was really taken" width="1080" height="1920" loading="lazy"></figure>
+        <div>
+          <h3>Free, supported by ads</h3>
+          <p>Ads never appear on a reminder, a notification or after you tap Taken. Pilltide is a reminder and log, not medical advice.</p>
+          <p><a href="https://pilltide.pages.dev/">Visit the website</a> · <a href="https://pilltide.pages.dev/privacy/">Privacy policy</a> · <a href="mailto:anithabheesetty@gmail.com">Support</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+<footer>
+  <div class="wrap">
+    <span>© 2026 NK Tools</span>
+    <nav aria-label="More"><a href="https://github.com/nookeshkarri7/pilltide-medicine-reminder">GitHub</a></nav>
+  </div>
+</footer>
+<script>
+document.getElementById('player').addEventListener('click', function () {
+  // YouTube loads only after a tap.
+  this.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/q3iW-B5XZt8?autoplay=1&rel=0" title="Pilltide teaser" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+});
+</script>
+</body>
+</html>
